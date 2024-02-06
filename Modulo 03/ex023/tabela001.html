@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table#tb1{
+            height: 150px;
+            width: 300px;
+            
+            border-collapse: collapse;
+            /*border-collapse: separate;*/
+        }
+        tr.paint{
+            background-color: gray;
+            color: white;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td.dado{
+            background-color: yellow;
+            color: black;
+        }
+
+        table#tb2{
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse;
+        }
+        table#tb2 td{
+            text-align: center; /*Alinhamento Horizontal*/
+            vertical-align: top;
+            
+        }
+        td
+    </style>
+</head>
+
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!--
+        Hierarquia de Tabelas (Simples)
+        table = tabela
+            table row = linha de tabela
+                table header = cabeçalho de tabela
+                table data = dados de tabela
+    -->
+    <hr>
+    <table id="tb1">
+        <tr class="paint"> <!--Primeira Linha-->
+            <td class="dado">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td class="dado">B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+        <tr class="paint">
+            <td>A3</td>
+            <td>B3</td>
+            <td class="dado">C3</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td class="dado">D4</td>
+        </tr>
+    </table>
+    <br>
+    <h1>Minha Segunda Tabela</h1>
+    <hr>    
+    <table id="tb2">
+        <tr> <!--Primeira Linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+        </tr>
+    </table>
+</body>
+
+</html>
