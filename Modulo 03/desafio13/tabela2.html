@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 13 Tabela 2</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        div{            
+            
+            
+            background-image: url('https://img.freepik.com/vetores-gratis/fundo-preto-estilo-3d-com-camada-de-papel_206725-669.jpg?w=1060&t=st=1707336411~exp=1707337011~hmac=1e7e5a8fa5758f9bff5d868ccc963d6058b00836ba231d6632a6bfc9b3af87de');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            height: 100vh;
+            position: relative;
+        }
+        table{
+            text-align: center;
+            font-size: 3em;
+
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        td{
+            border: 2px solid #9400FF ;
+            color: white;
+            padding: 40px;
+            text-shadow: 0px 0px 50px #FAEF5D;
+            backdrop-filter: blur(5px);
+        }
+        td:hover{
+            backdrop-filter: blur(0);
+            color: white;
+            text-shadow: 0px 0px 50px rgb(102, 255, 0);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
