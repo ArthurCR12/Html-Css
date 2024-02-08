@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(66, 66, 64);
+            color: white;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        hr {
+            border: 0;
+            height: 5px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.562), transparent);
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+            color: white;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        th {
+            padding: 8px;
+            background-color: #04AA6D;
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+        }
+
+        td {
+            border-bottom: 1px solid black;
+            padding: 8px;
+        }
+
+        .letras {
+            color: white;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        .cnome {
+            background-color: rgba(245, 245, 220, 0.800);
+        }
+
+        .csexo {
+            background-color: rgba(245, 245, 220, 0.600);
+        }
+
+        .cidade {
+            background-color: rgba(245, 245, 220, 0.400);
+        }
+
+        .cprof {
+            background-color: rgba(245, 245, 220, 0.200);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício de Tabela</h1>
+    <hr>
+    au
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th class="letras">Nome</th>
+            <th class="letras">Sexo</th>
+            <th class="letras">Idade</th>
+            <th class="letras">Profissão</th>
+        </tr>
+        <tr>
+            <td class="letras">Ana Maria</td>
+            <td class="letras">F</td>
+            <td class="letras">25</td>
+            <td class="letras">Jornalista</td>
+        </tr>
+        <tr>
+            <td class="letras">Cláudio</td>
+            <td class="letras">M</td>
+            <td class="letras">28</td>
+            <td class="letras">Programador</td>
+        </tr>
+        <tr>
+            <td class="letras">Gustavo</td>
+            <td class="letras">M</td>
+            <td class="letras">42</td>
+            <td class="letras">Professor</td>
+        </tr>
+        <tr>
+            <td class="letras">Hélio</td>
+            <td class="letras">M</td>
+            <td class="letras">19</td>
+            <td class="letras">Vendedor</td>
+        </tr>
+        <tr>
+            <td class="letras">Maria</td>
+            <td class="letras">F</td>
+            <td class="letras">39</td>
+            <td class="letras">Médica</td>
+        </tr>
+        <tr>
+            <td class="letras">Otávio</td>
+            <td class="letras">M</td>
+            <td class="letras">22</td>
+            <td class="letras">Nutricionista</td>
+        </tr>
+    </table>
+</body>
+
+</html>
