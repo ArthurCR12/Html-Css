@@ -1,29 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(109, 108, 108);
+            color: white;
+        }
+
+        h1 {
+            padding: 20px;
+        }
+
+        form {
+            margin: 20px;
+            padding: 10px;
+            background-color: rgb(70, 68, 68);
+            box-shadow: 2px 2px 10px black;
+        }
+        legend{            
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+        fieldset {
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #f806e4;
+        }
+
+        label {
+            text-shadow: 2px 2px 3px black;
+        }
+
+        li {            
+            padding: 5px;
+            list-style: none;
+            width: 100px;
+        }
+
+        ul li input:checked {
+            accent-color: violet;            
+        }
+
+        ul li:has(input:checked) {
+            border: 1px solid #f806e4;
+        }
+
+        input[type="submit"],
+        [type="reset"] {
+            margin-left: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        [type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Adiciona espaço entre o radio e o texto */
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="checkbox"]{
+            margin-right: 8px;
+            
+        }
+    </style>
 </head>
+
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="">
         <fieldset>
             <legend>Sexo</legend>
-            <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label><br>
-            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+            <ul>
+                <li><input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label><br></li>
+                <li><input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label></li>
+            </ul>
         </fieldset>
         <fieldset>
             <legend>Esportes Favoritos</legend>
-            <input type="checkbox" name="basq" id="ibasq">
+            <input type="checkbox" class="checkbox-label" name="basq" id="ibasq">
             <label for="ibasq">Basquete</label><br>
             <input type="checkbox" name="fut" id="ifut">
-            <label for="ifut">Futebol</label><br>  
+            <label for="ifut">Futebol</label><br>
             <input type="checkbox" name="nat" id="inat">
             <label for="inat">Natação</label><br>
             <input type="checkbox" name="tenis" id="itenis">
             <label for="itenis">Tênis</label>
-            
+
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
@@ -31,4 +110,5 @@
         </p>
     </form>
 </body>
+
 </html>
