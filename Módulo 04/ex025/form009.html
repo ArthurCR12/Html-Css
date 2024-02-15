@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="">
+        <p>
+            <label for="inum1">Número 1:</label>
+            <input type="range" name="num1" id="inum1" min="0" max="10" value="5" oninput="ival1.innerHTML = Number(inum1.value)
+                isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            <output id="ival1">5</output>
+        </p>
+        <p>
+            <label for="inum2">Número 2:</label>
+            <input type="range" name="num2" id="inum2" min="-10" max="10" value="5" oninput="ival2.innerHTML = Number(inum2.value)
+                isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            <output id="ival2">5</output>
+            <!-- oninput="isoma.innerHTML = Number(inun1.value) + Number(inun2.value) -->
+        </p>
+        <p>
+            <!-- O output não envia dados, serve apenas pra mostrar algo pro user -->
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">10</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="limparValores()">
+        </p>
+    </form>
+
+    <script>
+        function limparValores(){
+            document.getElementById("ival1").innerHTML = "5"
+            document.getElementById("ival2").innerHTML = "5"
+            document.getElementById("isoma").innerHTML = "10"
+        }
+    </script>
+</body>
+
+</html>

@@ -27,10 +27,12 @@
             background-color: rgb(70, 68, 68);
             box-shadow: 2px 2px 10px black;
         }
-        legend{            
+
+        legend {
             font-weight: bold;
             text-shadow: 2px 2px 5px black;
         }
+
         fieldset {
             padding: 15px;
             margin: 10px;
@@ -41,14 +43,14 @@
             text-shadow: 2px 2px 3px black;
         }
 
-        li {            
+        li {
             padding: 5px;
             list-style: none;
             width: 100px;
         }
 
         ul li input:checked {
-            accent-color: violet;            
+            accent-color: violet;
         }
 
         ul li:has(input:checked) {
@@ -71,13 +73,22 @@
             background-color: #45a049;
         }
 
-        /* Adiciona espaço entre o radio e o texto */
+        /* Adiciona espaço */
         input[type="radio"] {
             margin-right: 10px;
         }
-        input[type="checkbox"]{
+        input[type="checkbox"] {
             margin-right: 8px;
-            
+        }
+
+        /* Muda as coisas de o check estiver marcado */
+        input[type="checkbox"]:checked {
+            margin-right: 20px;
+        }
+
+        input[type="checkbox"]:checked+label {
+            color: blue;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.212);
         }
     </style>
 </head>
