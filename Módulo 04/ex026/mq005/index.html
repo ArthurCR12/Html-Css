@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Media Query</title>
 </head>
-<body>
+
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="menu-site" class="material-symbols-outlined" onclick="clickMenu()">
@@ -29,26 +33,55 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloribus fugiat unde placeat, dicta itaque eos, aliquid optio voluptates facilis ducimus eum rerum? Nemo aperiam at pariatur, voluptate deserunt suscipit?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet possimus expedita nihil commodi voluptatum facere, excepturi voluptatibus cupiditate! Quod necessitatibus beatae libero, est veniam harum laborum dignissimos perferendis sit blanditiis.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus eos maxime officia cupiditate officiis odio repellendus doloremque voluptatum vitae. Magnam molestias quisquam, voluptas at perspiciatis tenetur tempore tempora totam.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloribus fugiat unde placeat, dicta
+                itaque eos, aliquid optio voluptates facilis ducimus eum rerum? Nemo aperiam at pariatur, voluptate
+                deserunt suscipit?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet possimus expedita nihil commodi
+                voluptatum facere, excepturi voluptatibus cupiditate! Quod necessitatibus beatae libero, est veniam
+                harum laborum dignissimos perferendis sit blanditiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus eos maxime officia
+                cupiditate officiis odio repellendus doloremque voluptatum vitae. Magnam molestias quisquam, voluptas at
+                perspiciatis tenetur tempore tempora totam.
             </p>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloribus fugiat unde placeat, dicta itaque eos, aliquid optio voluptates facilis ducimus eum rerum? Nemo aperiam at pariatur, voluptate deserunt suscipit?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet possimus expedita nihil commodi voluptatum facere, excepturi voluptatibus cupiditate! Quod necessitatibus beatae libero, est veniam harum laborum dignissimos perferendis sit blanditiis.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus eos maxime officia cupiditate officiis odio repellendus doloremque voluptatum vitae. Magnam molestias quisquam, voluptas at perspiciatis tenetur tempore tempora totam.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloribus fugiat unde placeat, dicta
+                itaque eos, aliquid optio voluptates facilis ducimus eum rerum? Nemo aperiam at pariatur, voluptate
+                deserunt suscipit?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet possimus expedita nihil commodi
+                voluptatum facere, excepturi voluptatibus cupiditate! Quod necessitatibus beatae libero, est veniam
+                harum laborum dignissimos perferendis sit blanditiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus eos maxime officia
+                cupiditate officiis odio repellendus doloremque voluptatum vitae. Magnam molestias quisquam, voluptas at
+                perspiciatis tenetur tempore tempora totam.
             </p>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloribus fugiat unde placeat, dicta itaque eos, aliquid optio voluptates facilis ducimus eum rerum? Nemo aperiam at pariatur, voluptate deserunt suscipit?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet possimus expedita nihil commodi voluptatum facere, excepturi voluptatibus cupiditate! Quod necessitatibus beatae libero, est veniam harum laborum dignissimos perferendis sit blanditiis.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus eos maxime officia cupiditate officiis odio repellendus doloremque voluptatum vitae. Magnam molestias quisquam, voluptas at perspiciatis tenetur tempore tempora totam.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus doloribus fugiat unde placeat, dicta
+                itaque eos, aliquid optio voluptates facilis ducimus eum rerum? Nemo aperiam at pariatur, voluptate
+                deserunt suscipit?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet possimus expedita nihil commodi
+                voluptatum facere, excepturi voluptatibus cupiditate! Quod necessitatibus beatae libero, est veniam
+                harum laborum dignissimos perferendis sit blanditiis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus eos maxime officia
+                cupiditate officiis odio repellendus doloremque voluptatum vitae. Magnam molestias quisquam, voluptas at
+                perspiciatis tenetur tempore tempora totam.
             </p>
         </article>
     </main>
     <script>
-        function clickMenu(){
-            if(menu.style.display == 'block'){ menu.style.display = 'none'} else {menu.style.display = 'block'}            
+        function mudouTamanho() {
+            if (window.innerWidth >= 670) {
+                menu.style.display = 'block'
+            } 
+        }
+
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
         }
     </script>
 </body>
+
 </html>
