@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+/* Mobal Firts */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+body,
+html {
+    background-color: rgb(50, 50, 50);
+    color: white;
+
+}
+
+header {    
+    background-color: rgb(75, 75, 75);
+
+    & h1 {
+        text-shadow: 2px 3px 2px black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    & #menu-site {
+        display: block;
+        background-color: rgb(40, 40, 40);
+        text-align: center;
+        padding: 10px;        
+    }
+    & #menu-site:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    & menu {
+        display: none;
+    }
+
+    & menu>ul {
+        list-style-type: none;
+    }
+
+    & menu>ul>li>a {
+        text-shadow: 2px 2px 2px black;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        background-color: rgb(100, 100, 100);
+        color: white;
+        border-top: 2px solid black;
+    }
+
+    & menu>ul>li>a:hover {
+        background-color: gray;
+    }
+}
+
+main {
+    width: 90vw;
+    margin: 10px auto;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    padding: 10px;
+
+    & h2 {
+        text-align: center;
+        border-radius: 10px;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        background-image: linear-gradient(to bottom, rgb(184, 181, 181) 20%, transparent);
+    }
+
+    & article>p {
+        color: black;
+        text-align: justify;
+        text-indent: 20px;
+        margin-bottom: 20px;
+    }
+
+}
