@@ -10,7 +10,7 @@ Grandes Telas: px > 1200px
 
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px)  {
     body{
         background-image: linear-gradient(to top, rgb(25,25,25)25%, rgb(100,100,100));
         
@@ -29,6 +29,10 @@ Grandes Telas: px > 1200px
     #form {
         float: right;
         width: 70%;
+
+        & p{
+            font-size: 1em;
+        }
     }
 }
 
@@ -50,5 +54,9 @@ Grandes Telas: px > 1200px
     #form{
         float: left;
         width: 55%;
+
+        & p{
+            font-size: 1em;
+        }
     }
 }
