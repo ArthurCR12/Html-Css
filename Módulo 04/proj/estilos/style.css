@@ -69,6 +69,7 @@ main{
        }
 
        & input{
+        color: white;
         text-align: center;
         background-color: rgb(10, 138, 10);
         font-size: 1em;        
@@ -80,7 +81,8 @@ main{
        }
 
        & input:focus-within{
-        background-color: white;        
+        background-color: white;  
+        color: black;      
        }
     } 
 
@@ -109,8 +111,7 @@ main{
         border-radius: 15px; border: none;
         background-color: rgb(10, 138, 10);
         color: white;
-        font-size: 0.7em;
-        
+        font-size: 0.7em;        
     }
     & #esqueci:hover{
         background-color: rgb(10, 180, 10);
@@ -119,8 +120,6 @@ main{
     & #ico-mail{
         position: absolute;
         left: 83%;
-        top: 10%;
-        
-        transform: translate();
+        top: 10%;                
     }
 }
